@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Items · Potty Rogue Wiki</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="wiki">
+  <p class="crumbs"><a href="../">Potty Rogue</a> › <a href="index.html">Wiki</a></p>
+  <nav class="wiki-nav">
+    <a href="index.html">Wiki Home</a>
+    <a href="story.html">Story</a>
+    <a href="baddies.html">Baddies</a>
+    <a href="bosses.html">Bosses</a>
+    <a class="current" href="items.html">Items</a>
+    <a href="perks.html">Perks</a>
+    <a href="floors.html">Floors</a>
+    <a href="tips.html">Tips & Tricks</a>
+  </nav>
+  <h1>Items</h1>
+<p class="lead">Items come from Medicine Cabinets, from the floor, and from the Plumber's Guild. They go in your bag (4 slots to start) and nothing happens until you tap Use.</p>
+<h2>Where items come from</h2>
+<ul>
+  <li><strong>Medicine Cabinets.</strong> Every floor has 1, and from floor 3 there's a 30% chance of a second. Bump one to open it: you get points and it drops one random item.</li>
+  <li><strong>On the floor.</strong> Each floor has a 35% chance of one item just lying around, rolled with the same base odds.</li>
+  <li><strong>The Plumber's Guild.</strong> Spend Flush Coins on starting items, then pick one to bring along at the start of each run.</li>
+</ul>
+<p>If your bag is full, you can't pick an item up. It stays where it is until you free a slot and come back.</p>
+
+<h2>Drop odds</h2>
+<p>A cabinet first rolls a rarity, then picks evenly among the items of that rarity. The Lucky Find perk shifts the odds away from Common.</p>
+<div class="table-wrap"><table>
+<tr><th>Rarity</th><th>Normal</th><th>Lucky Find ×1</th><th>Lucky Find ×2</th></tr>
+<tr><td><span class="rarity common">Common</span></td><td>60%</td><td>41%</td><td>26%</td></tr>
+<tr><td><span class="rarity uncommon">Uncommon</span></td><td>27%</td><td>31%</td><td>32%</td></tr>
+<tr><td><span class="rarity rare">Rare</span></td><td>10%</td><td>21%</td><td>31%</td></tr>
+<tr><td><span class="rarity legendary">Legendary</span></td><td>3%</td><td>6.9%</td><td>11%</td></tr>
+</table></div>
+<div class="table-wrap"><table>
+<tr><th></th><th>Item</th><th>Rarity</th><th>Normal</th><th>Lucky Find ×1</th><th>Lucky Find ×2</th></tr>
+<tr><td><img class="sprite" src="img/item_tpRoll.png" width="32" height="32" alt="Throwing TP Roll"></td><td><a href="#throwing-tp-roll">Throwing TP Roll</a></td><td><span class="rarity common">Common</span></td><td>20%</td><td>14%</td><td>8.6%</td></tr>
+<tr><td><img class="sprite" src="img/item_holdIt.png" width="32" height="32" alt="Hold It!"></td><td><a href="#hold-it">Hold It!</a></td><td><span class="rarity common">Common</span></td><td>20%</td><td>14%</td><td>8.6%</td></tr>
+<tr><td><img class="sprite" src="img/item_wetWipe.png" width="32" height="32" alt="Wet Wipe"></td><td><a href="#wet-wipe">Wet Wipe</a></td><td><span class="rarity common">Common</span></td><td>20%</td><td>14%</td><td>8.6%</td></tr>
+<tr><td><img class="sprite" src="img/item_pruneJuice.png" width="32" height="32" alt="Prune Juice"></td><td><a href="#prune-juice">Prune Juice</a></td><td><span class="rarity uncommon">Uncommon</span></td><td>9%</td><td>10%</td><td>11%</td></tr>
+<tr><td><img class="sprite" src="img/item_hotSauce.png" width="32" height="32" alt="Hot Sauce"></td><td><a href="#hot-sauce">Hot Sauce</a></td><td><span class="rarity uncommon">Uncommon</span></td><td>9%</td><td>10%</td><td>11%</td></tr>
+<tr><td><img class="sprite" src="img/item_rubberGlove.png" width="32" height="32" alt="Rubber Glove"></td><td><a href="#rubber-glove">Rubber Glove</a></td><td><span class="rarity uncommon">Uncommon</span></td><td>9%</td><td>10%</td><td>11%</td></tr>
+<tr><td><img class="sprite" src="img/item_flushPortal.png" width="32" height="32" alt="Flush Portal"></td><td><a href="#flush-portal">Flush Portal</a></td><td><span class="rarity rare">Rare</span></td><td>2.5%</td><td>5.2%</td><td>7.8%</td></tr>
+<tr><td><img class="sprite" src="img/item_iceColdSeat.png" width="32" height="32" alt="Ice-Cold Seat"></td><td><a href="#icecold-seat">Ice-Cold Seat</a></td><td><span class="rarity rare">Rare</span></td><td>2.5%</td><td>5.2%</td><td>7.8%</td></tr>
+<tr><td><img class="sprite" src="img/item_staticBathMat.png" width="32" height="32" alt="Static Bath Mat"></td><td><a href="#static-bath-mat">Static Bath Mat</a></td><td><span class="rarity rare">Rare</span></td><td>2.5%</td><td>5.2%</td><td>7.8%</td></tr>
+<tr><td><img class="sprite" src="img/item_bathBomb.png" width="32" height="32" alt="Bath Bomb"></td><td><a href="#bath-bomb">Bath Bomb</a></td><td><span class="rarity rare">Rare</span></td><td>2.5%</td><td>5.2%</td><td>7.8%</td></tr>
+<tr><td><img class="sprite" src="img/item_royalFlush.png" width="32" height="32" alt="Royal Flush"></td><td><a href="#royal-flush">Royal Flush</a></td><td><span class="rarity legendary">Legendary</span></td><td>3%</td><td>6.9%</td><td>11%</td></tr>
+</table></div>
+<p class="muted">Floor items always use the normal odds; Lucky Find only affects Medicine Cabinets.</p>
+
+<h2>Every item</h2>
+<section class="entry" id="throwing-tp-roll">
+  <div class="entry-art"><img class="sprite" src="img/item_tpRoll.png" width="64" height="64" alt="Throwing TP Roll"></div>
+  <div class="entry-text">
+    <h3>Throwing TP Roll</h3>
+    <p>Throw it in a line. Hits the first baddie for your throw damage, but doesn't stun it.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>From a cabinet</dt><dd>20%</dd></div><div><dt>How to use</dt><dd>Use, then swipe to aim</dd></div><div><dt>Stacks</dt><dd>Yes</dd></div></dl><p class="tip"><strong>Tip:</strong> You start with 3, pickups give 2, and they all stack in one bag slot. Great for softening up a baddie before it reaches you, or finishing one without stepping next to it.</p>
+  </div>
+</section>
+<section class="entry" id="hold-it">
+  <div class="entry-art"><img class="sprite" src="img/item_holdIt.png" width="64" height="64" alt="Hold It!"></div>
+  <div class="entry-text">
+    <h3>Hold It!</h3>
+    <p>Clench and wait one turn.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>From a cabinet</dt><dd>20%</dd></div><div><dt>How to use</dt><dd>Use</dd></div></dl><p class="tip"><strong>Tip:</strong> Waiting is a real move. If a baddie is 2 tiles away, Hold It! makes it step next to you, and then you get the first swing.</p>
+  </div>
+</section>
+<section class="entry" id="wet-wipe">
+  <div class="entry-art"><img class="sprite" src="img/item_wetWipe.png" width="64" height="64" alt="Wet Wipe"></div>
+  <div class="entry-text">
+    <h3>Wet Wipe</h3>
+    <p>Restore 1 heart.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>From a cabinet</dt><dd>20%</dd></div><div><dt>How to use</dt><dd>Use</dd></div></dl><p class="tip"><strong>Tip:</strong> Can't be used at full health, so you won't waste one by accident.</p>
+  </div>
+</section>
+<section class="entry" id="prune-juice">
+  <div class="entry-art"><img class="sprite" src="img/item_pruneJuice.png" width="64" height="64" alt="Prune Juice"></div>
+  <div class="entry-text">
+    <h3>Prune Juice</h3>
+    <p>Your next plunger hit does triple damage. Each extra swig triples it again.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity uncommon">Uncommon</span></dd></div><div><dt>From a cabinet</dt><dd>9%</dd></div><div><dt>How to use</dt><dd>Use</dd></div></dl><p class="tip"><strong>Tip:</strong> Stacks: 1 swig is ×3, 2 is ×9, 3 is ×27. The bonus waits on your plunger until your next hit, so drink it out of harm's way.</p>
+  </div>
+</section>
+<section class="entry" id="hot-sauce">
+  <div class="entry-art"><img class="sprite" src="img/item_hotSauce.png" width="64" height="64" alt="Hot Sauce"></div>
+  <div class="entry-text">
+    <h3>Hot Sauce</h3>
+    <p>Fling a fireball in a line for 3 damage.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity uncommon">Uncommon</span></dd></div><div><dt>From a cabinet</dt><dd>9%</dd></div><div><dt>How to use</dt><dd>Use, then swipe to aim</dd></div></dl><p class="tip"><strong>Tip:</strong> 3 damage at any range. It flushes most regular baddies outright and doesn't need you to be next to anything.</p>
+  </div>
+</section>
+<section class="entry" id="rubber-glove">
+  <div class="entry-art"><img class="sprite" src="img/item_rubberGlove.png" width="64" height="64" alt="Rubber Glove"></div>
+  <div class="entry-text">
+    <h3>Rubber Glove</h3>
+    <p>Keep it in your bag. Step onto a drain to pull out a stuck Rubber Duck (+500).</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity uncommon">Uncommon</span></dd></div><div><dt>From a cabinet</dt><dd>9%</dd></div><div><dt>How to use</dt><dd>Just carry it</dd></div></dl><p class="tip"><strong>Tip:</strong> Does nothing until you step on the Rubber Duck. Then it's used up and you get +500 points.</p>
+  </div>
+</section>
+<section class="entry" id="flush-portal">
+  <div class="entry-art"><img class="sprite" src="img/item_flushPortal.png" width="64" height="64" alt="Flush Portal"></div>
+  <div class="entry-text">
+    <h3>Flush Portal</h3>
+    <p>Flush yourself to any open tile on this floor. Perfect for ducking into a choke point.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity rare">Rare</span></dd></div><div><dt>From a cabinet</dt><dd>2.5%</dd></div><div><dt>How to use</dt><dd>Use, then tap a tile</dd></div></dl><p class="tip"><strong>Tip:</strong> Can't take you to the stairs, but it can drop you right next to them. Also great for escaping a crowd or reaching a cabinet behind a baddie.</p>
+  </div>
+</section>
+<section class="entry" id="icecold-seat">
+  <div class="entry-art"><img class="sprite" src="img/item_iceColdSeat.png" width="64" height="64" alt="Ice-Cold Seat"></div>
+  <div class="entry-text">
+    <h3>Ice-Cold Seat</h3>
+    <p>Every baddie on the floor except bosses is frozen for 3 turns.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity rare">Rare</span></dd></div><div><dt>From a cabinet</dt><dd>2.5%</dd></div><div><dt>How to use</dt><dd>Use</dd></div></dl><p class="tip"><strong>Tip:</strong> Freezes everything except bosses, including Floaters, Mini Clogs, and Imps mid-charge. Use it when 3 or more baddies are closing in.</p>
+  </div>
+</section>
+<section class="entry" id="static-bath-mat">
+  <div class="entry-art"><img class="sprite" src="img/item_staticBathMat.png" width="64" height="64" alt="Static Bath Mat"></div>
+  <div class="entry-text">
+    <h3>Static Bath Mat</h3>
+    <p>Zaps up to 3 baddies for 2 damage each.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity rare">Rare</span></dd></div><div><dt>From a cabinet</dt><dd>2.5%</dd></div><div><dt>How to use</dt><dd>Use</dd></div></dl><p class="tip"><strong>Tip:</strong> Picks its 3 targets at random among every living baddie on the floor, near or far.</p>
+  </div>
+</section>
+<section class="entry" id="bath-bomb">
+  <div class="entry-art"><img class="sprite" src="img/item_bathBomb.png" width="64" height="64" alt="Bath Bomb"></div>
+  <div class="entry-text">
+    <h3>Bath Bomb</h3>
+    <p>Fizzes all 8 tiles around you for 2 damage.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity rare">Rare</span></dd></div><div><dt>From a cabinet</dt><dd>2.5%</dd></div><div><dt>How to use</dt><dd>Use</dd></div></dl><p class="tip"><strong>Tip:</strong> Hits diagonals too. Best when you're surrounded.</p>
+  </div>
+</section>
+<section class="entry" id="royal-flush">
+  <div class="entry-art"><img class="sprite" src="img/item_royalFlush.png" width="64" height="64" alt="Royal Flush"></div>
+  <div class="entry-text">
+    <h3>Royal Flush</h3>
+    <p>Flushes every baddie on the floor except bosses.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity legendary">Legendary</span></dd></div><div><dt>From a cabinet</dt><dd>3%</dd></div><div><dt>How to use</dt><dd>Use</dd></div></dl><p class="tip"><strong>Tip:</strong> Clears every regular baddie on the floor, and every Floater puddle too. It doesn't hurt bosses, but it does flush King Clog's Mini Clogs.</p>
+  </div>
+</section>
+  <footer>This wiki is generated from the game's own data, so the numbers match the current version. &copy; 2026 <a href="../../">Human Signal LLC</a></footer>
+</main>
+</body>
+</html>

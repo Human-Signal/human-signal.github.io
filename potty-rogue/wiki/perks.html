@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perks · Potty Rogue Wiki</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="wiki">
+  <p class="crumbs"><a href="../">Potty Rogue</a> › <a href="index.html">Wiki</a></p>
+  <nav class="wiki-nav">
+    <a href="index.html">Wiki Home</a>
+    <a href="story.html">Story</a>
+    <a href="baddies.html">Baddies</a>
+    <a href="bosses.html">Bosses</a>
+    <a href="items.html">Items</a>
+    <a class="current" href="perks.html">Perks</a>
+    <a href="floors.html">Floors</a>
+    <a href="tips.html">Tips & Tricks</a>
+  </nav>
+  <h1>Perks</h1>
+<p class="lead">Every level-up heals you to full and offers 3 different perks. You get 9 level-ups in a run (level 1 to 10), so you'll see a lot of choices but only keep 9.</p>
+<h2>How offers work</h2>
+<p>Each of the 3 slots rolls a rarity (Common 60%, Uncommon 27%, Rare 10%, Legendary 3%) and then picks evenly within it. There are no duplicates in one offer, and a perk stops showing up once you've taken it the maximum number of times. The <strong>Lucky Wipe</strong> Extra gives you one free reroll per run.</p>
+<div class="table-wrap"><table>
+<tr><th></th><th>Perk</th><th>Rarity</th><th>Max</th><th>Chance to be offered</th></tr>
+<tr><td><img class="sprite" src="img/perk_ironBowels.png" width="32" height="32" alt="Iron Bowels"></td><td><a href="#iron-bowels">Iron Bowels</a></td><td><span class="rarity common">Common</span></td><td>4</td><td>36%</td></tr>
+<tr><td><img class="sprite" src="img/perk_firmGrip.png" width="32" height="32" alt="Firm Grip"></td><td><a href="#firm-grip">Firm Grip</a></td><td><span class="rarity common">Common</span></td><td>3</td><td>36%</td></tr>
+<tr><td><img class="sprite" src="img/perk_sharperRolls.png" width="32" height="32" alt="Sharper Rolls"></td><td><a href="#sharper-rolls">Sharper Rolls</a></td><td><span class="rarity common">Common</span></td><td>3</td><td>36%</td></tr>
+<tr><td><img class="sprite" src="img/perk_extraRolls.png" width="32" height="32" alt="Extra Rolls"></td><td><a href="#extra-rolls">Extra Rolls</a></td><td><span class="rarity common">Common</span></td><td>5</td><td>36%</td></tr>
+<tr><td><img class="sprite" src="img/perk_cabinetRaider.png" width="32" height="32" alt="Cabinet Raider"></td><td><a href="#cabinet-raider">Cabinet Raider</a></td><td><span class="rarity common">Common</span></td><td>2</td><td>36%</td></tr>
+<tr><td><img class="sprite" src="img/perk_biggerBag.png" width="32" height="32" alt="Bigger Bag"></td><td><a href="#bigger-bag">Bigger Bag</a></td><td><span class="rarity uncommon">Uncommon</span></td><td>3</td><td>40%</td></tr>
+<tr><td><img class="sprite" src="img/perk_quickLearner.png" width="32" height="32" alt="Quick Learner"></td><td><a href="#quick-learner">Quick Learner</a></td><td><span class="rarity uncommon">Uncommon</span></td><td>1</td><td>40%</td></tr>
+<tr><td><img class="sprite" src="img/perk_longStun.png" width="32" height="32" alt="Long Stun"></td><td><a href="#long-stun">Long Stun</a></td><td><span class="rarity rare">Rare</span></td><td>2</td><td>10%</td></tr>
+<tr><td><img class="sprite" src="img/perk_luckyFind.png" width="32" height="32" alt="Lucky Find"></td><td><a href="#lucky-find">Lucky Find</a></td><td><span class="rarity rare">Rare</span></td><td>2</td><td>10%</td></tr>
+<tr><td><img class="sprite" src="img/perk_secondWind.png" width="32" height="32" alt="Second Wind"></td><td><a href="#second-wind">Second Wind</a></td><td><span class="rarity rare">Rare</span></td><td>1</td><td>10%</td></tr>
+<tr><td><img class="sprite" src="img/perk_doubleTime.png" width="32" height="32" alt="Double Time"></td><td><a href="#double-time">Double Time</a></td><td><span class="rarity legendary">Legendary</span></td><td>1</td><td>8.8%</td></tr>
+</table></div>
+<p class="muted">"Chance to be offered" is the chance a perk is among the 3 choices on a level-up when nothing has been maxed out yet.</p>
+<h2>XP to level up</h2>
+<div class="table-wrap"><table>
+<tr><th>Level</th><th>XP needed</th></tr>
+<tr><td>1 → 2</td><td>4</td></tr>
+<tr><td>2 → 3</td><td>6</td></tr>
+<tr><td>3 → 4</td><td>10</td></tr>
+<tr><td>4 → 5</td><td>16</td></tr>
+<tr><td>5 → 6</td><td>23</td></tr>
+<tr><td>6 → 7</td><td>29</td></tr>
+<tr><td>7 → 8</td><td>34</td></tr>
+<tr><td>8 → 9</td><td>40</td></tr>
+<tr><td>9 → 10</td><td>46</td></tr>
+</table></div>
+<p class="muted">At level 10 you stop earning XP, so level-ups stop healing you. Quick Learner adds 50% to every kill's XP (rounded up).</p>
+<h2>Every perk</h2>
+<section class="entry" id="iron-bowels">
+  <div class="entry-art"><img class="sprite" src="img/perk_ironBowels.png" width="64" height="64" alt="Iron Bowels"></div>
+  <div class="entry-text">
+    <h3>Iron Bowels</h3>
+    <p>+1 max heart (and heal 1).</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>Max per run</dt><dd>4</dd></div><div><dt>Offered</dt><dd>36% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> The only way to raise your max hearts. Also heals 1 on the spot.</p>
+  </div>
+</section>
+<section class="entry" id="firm-grip">
+  <div class="entry-art"><img class="sprite" src="img/perk_firmGrip.png" width="64" height="64" alt="Firm Grip"></div>
+  <div class="entry-text">
+    <h3>Firm Grip</h3>
+    <p>+1 plunger damage.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>Max per run</dt><dd>3</dd></div><div><dt>Offered</dt><dd>36% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> Every point matters: it multiplies with Prune Juice. At 4 damage, one swig flushes any boss in one hit.</p>
+  </div>
+</section>
+<section class="entry" id="sharper-rolls">
+  <div class="entry-art"><img class="sprite" src="img/perk_sharperRolls.png" width="64" height="64" alt="Sharper Rolls"></div>
+  <div class="entry-text">
+    <h3>Sharper Rolls</h3>
+    <p>+1 damage for Throwing TP Rolls.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>Max per run</dt><dd>3</dd></div><div><dt>Offered</dt><dd>36% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> Turns TP Rolls from a nuisance into a real weapon, and ranged damage is the safe way to fight The Law and the Gas Giant.</p>
+  </div>
+</section>
+<section class="entry" id="extra-rolls">
+  <div class="entry-art"><img class="sprite" src="img/perk_extraRolls.png" width="64" height="64" alt="Extra Rolls"></div>
+  <div class="entry-text">
+    <h3>Extra Rolls</h3>
+    <p>+2 Throwing TP Rolls.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>Max per run</dt><dd>5</dd></div><div><dt>Offered</dt><dd>36% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> Only offered if you have TP Rolls or a free bag slot to put them in.</p>
+  </div>
+</section>
+<section class="entry" id="cabinet-raider">
+  <div class="entry-art"><img class="sprite" src="img/perk_cabinetRaider.png" width="64" height="64" alt="Cabinet Raider"></div>
+  <div class="entry-text">
+    <h3>Cabinet Raider</h3>
+    <p>+50% points from Medicine Cabinets.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity common">Common</span></dd></div><div><dt>Max per run</dt><dd>2</dd></div><div><dt>Offered</dt><dd>36% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> Cabinet points grow with depth, so this pays off more the deeper you go. Good for score chasing and Flush Coins.</p>
+  </div>
+</section>
+<section class="entry" id="bigger-bag">
+  <div class="entry-art"><img class="sprite" src="img/perk_biggerBag.png" width="64" height="64" alt="Bigger Bag"></div>
+  <div class="entry-text">
+    <h3>Bigger Bag</h3>
+    <p>+2 bag slots.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity uncommon">Uncommon</span></dd></div><div><dt>Max per run</dt><dd>3</dd></div><div><dt>Offered</dt><dd>40% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> More room means you can save rare items for the boss instead of using them early to make space.</p>
+  </div>
+</section>
+<section class="entry" id="quick-learner">
+  <div class="entry-art"><img class="sprite" src="img/perk_quickLearner.png" width="64" height="64" alt="Quick Learner"></div>
+  <div class="entry-text">
+    <h3>Quick Learner</h3>
+    <p>+50% XP from kills. The only way to hit level 10 before the boss.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity uncommon">Uncommon</span></dd></div><div><dt>Max per run</dt><dd>1</dd></div><div><dt>Offered</dt><dd>40% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> Take it early. It's only offered up to level 8, and it's the only way to reach level 10 before the boss.</p>
+  </div>
+</section>
+<section class="entry" id="long-stun">
+  <div class="entry-art"><img class="sprite" src="img/perk_longStun.png" width="64" height="64" alt="Long Stun"></div>
+  <div class="entry-text">
+    <h3>Long Stun</h3>
+    <p>Your stuns last 1 turn longer.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity rare">Rare</span></dd></div><div><dt>Max per run</dt><dd>2</dd></div><div><dt>Offered</dt><dd>10% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> Lets you juggle 3 baddies instead of 2, and makes elites lose 2 turns instead of 1.</p>
+  </div>
+</section>
+<section class="entry" id="lucky-find">
+  <div class="entry-art"><img class="sprite" src="img/perk_luckyFind.png" width="64" height="64" alt="Lucky Find"></div>
+  <div class="entry-text">
+    <h3>Lucky Find</h3>
+    <p>Medicine Cabinets drop rarer items.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity rare">Rare</span></dd></div><div><dt>Max per run</dt><dd>2</dd></div><div><dt>Offered</dt><dd>10% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> See the odds on the <a href="items.html">Items</a> page. Two of these more than triple your chance of a Royal Flush.</p>
+  </div>
+</section>
+<section class="entry" id="second-wind">
+  <div class="entry-art"><img class="sprite" src="img/perk_secondWind.png" width="64" height="64" alt="Second Wind"></div>
+  <div class="entry-text">
+    <h3>Second Wind</h3>
+    <p>Every 4th baddie you flush heals 1 heart.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity rare">Rare</span></dd></div><div><dt>Max per run</dt><dd>1</dd></div><div><dt>Offered</dt><dd>10% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> The count keeps going at full health, so a heal can be wasted. It's best on long runs past level 10, when level-ups stop healing you.</p>
+  </div>
+</section>
+<section class="entry" id="double-time">
+  <div class="entry-art"><img class="sprite" src="img/perk_doubleTime.png" width="64" height="64" alt="Double Time"></div>
+  <div class="entry-text">
+    <h3>Double Time</h3>
+    <p>Take 2 actions every turn for the rest of the run.</p><dl class="stats"><div><dt>Rarity</dt><dd><span class="rarity legendary">Legendary</span></dd></div><div><dt>Max per run</dt><dd>1</dd></div><div><dt>Offered</dt><dd>8.8% of level-ups</dd></div></dl><p class="tip"><strong>Tip:</strong> The rarest perk and the strongest. Two actions a turn means you can hit twice before anything hits back, or step out of a lane and still swing.</p>
+  </div>
+</section>
+  <footer>This wiki is generated from the game's own data, so the numbers match the current version. &copy; 2026 <a href="../../">Human Signal LLC</a></footer>
+</main>
+</body>
+</html>

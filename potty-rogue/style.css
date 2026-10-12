@@ -50,3 +50,94 @@ footer { margin-top: 32px; font-size: 14px; opacity: 0.75; }
 @media (max-width: 720px) {
   main { margin: 0; border-left: 0; border-right: 0; padding: 24px 20px; }
 }
+
+/* Wiki */
+
+main.wiki { max-width: 860px; }
+
+img.sprite { image-rendering: pixelated; vertical-align: middle; }
+
+.crumbs { margin: 0 0 8px; font-size: 14px; opacity: 0.75; }
+
+.wiki-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 24px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid var(--ink);
+}
+.wiki-nav a {
+  margin: 0;
+  padding: 4px 10px;
+  border: 2px solid var(--ink);
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+.wiki-nav a.current { background: var(--gold); }
+
+.lead { font-size: 19px; }
+.muted { opacity: 0.7; }
+.flavor { font-style: italic; }
+
+.tile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.tile-link {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 3px solid var(--ink);
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.tile-link:hover { background: #fff8dc; }
+
+.entry {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+  padding: 14px 16px;
+  border: 3px solid var(--ink);
+  background: #fff;
+}
+.entry-art { flex: 0 0 auto; }
+.area-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border: 2px solid var(--ink);
+  background-size: 32px 32px;
+  image-rendering: pixelated;
+}
+.entry-text { flex: 1; min-width: 0; }
+.entry h3 { margin: 0 0 4px; font-size: 20px; }
+.entry p { margin: 6px 0; }
+
+.stats { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 8px 0; font-size: 15px; }
+.stats div { display: flex; gap: 6px; }
+.stats dt { font-weight: 700; }
+.stats dd { margin: 0; }
+
+.tip { padding: 8px 12px; background: #e6f2e9; border-left: 4px solid var(--green); }
+
+.rarity { padding: 1px 7px; border-radius: 4px; font-size: 13px; font-weight: 700; color: #fff; white-space: nowrap; }
+.rarity.common { background: #7a7f87; }
+.rarity.uncommon { background: var(--green); }
+.rarity.rare { background: #2f6ea8; }
+.rarity.legendary { background: #b8860b; }
+
+.table-wrap { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; background: #fff; font-size: 15px; }
+th, td { padding: 6px 10px; border: 2px solid var(--ink); text-align: left; vertical-align: middle; }
+th { background: var(--ink); color: var(--cream); }
+
+@media (max-width: 720px) {
+  .entry { flex-direction: column; gap: 8px; }
+}
