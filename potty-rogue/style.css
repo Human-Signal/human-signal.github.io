@@ -138,6 +138,12 @@ img.sprite { image-rendering: pixelated; vertical-align: middle; }
 .release ul { margin: 8px 0 0; padding-left: 1.2em; }
 .release li { margin: 6px 0; }
 
+img.ach-icon {
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  background: #fff;
+}
+
 .rarity { padding: 1px 7px; border-radius: 4px; font-size: 13px; font-weight: 700; color: #fff; white-space: nowrap; }
 .rarity.common { background: #7a7f87; }
 .rarity.uncommon { background: var(--green); }
