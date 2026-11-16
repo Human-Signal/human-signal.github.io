@@ -127,6 +127,17 @@ img.sprite { image-rendering: pixelated; vertical-align: middle; }
 
 .tip { padding: 8px 12px; background: #e6f2e9; border-left: 4px solid var(--green); }
 
+.release {
+  margin: 24px 0;
+  padding: 16px 18px;
+  border: 3px solid var(--ink);
+  background: #fff;
+}
+.release h2 { margin: 0 0 4px; }
+.release .muted { margin: 0 0 10px; }
+.release ul { margin: 8px 0 0; padding-left: 1.2em; }
+.release li { margin: 6px 0; }
+
 .rarity { padding: 1px 7px; border-radius: 4px; font-size: 13px; font-weight: 700; color: #fff; white-space: nowrap; }
 .rarity.common { background: #7a7f87; }
 .rarity.uncommon { background: var(--green); }
