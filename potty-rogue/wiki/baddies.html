@@ -25,7 +25,7 @@
 <p class="lead">Everything that lives in the pipes, apart from the bosses. Melee baddies only attack straight up, down, left, or right, and every plunger hit stuns.</p>
 <div class="table-wrap"><table>
 <tr><th></th><th>Baddie</th><th>Health</th><th>Elite HP</th><th>Hits for</th><th>XP</th><th>Elite XP</th><th>Points</th><th>First floor</th></tr>
-<tr><td><img class="sprite" src="img/enemy_hairball.png" width="32" height="32" alt="Hairball"></td><td><a href="#hairball">Hairball</a></td><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>10</td><td>1</td></tr>
+<tr><td><img class="sprite" src="img/enemy_hairball.png" width="32" height="32" alt="Hairball"></td><td><a href="#hairball">Hairball</a></td><td>1</td><td>3</td><td>1</td><td>1</td><td>2</td><td>10</td><td>1</td></tr>
 <tr><td><img class="sprite" src="img/enemy_floater.png" width="32" height="32" alt="Floater"></td><td><a href="#floater">Floater</a></td><td>1</td><td>2</td><td>1</td><td>2</td><td>4</td><td>15</td><td>3</td></tr>
 <tr><td><img class="sprite" src="img/enemy_stinkEye.png" width="32" height="32" alt="Stink Eye"></td><td><a href="#stink-eye">Stink Eye</a></td><td>1</td><td>2</td><td>1</td><td>2</td><td>4</td><td>15</td><td>4</td></tr>
 <tr><td><img class="sprite" src="img/enemy_sbd.png" width="32" height="32" alt="S.B.D."></td><td><a href="#sbd">S.B.D.</a></td><td>1</td><td>2</td><td>1</td><td>2</td><td>4</td><td>15</td><td>5</td></tr>
@@ -37,7 +37,7 @@
 <tr><td><img class="sprite" src="img/enemy_uhOh.png" width="32" height="32" alt="Uh-Oh"></td><td><a href="#uhoh">Uh-Oh</a></td><td>1</td><td>2</td><td>1</td><td>3</td><td>6</td><td>25</td><td>11</td></tr>
 </table></div>
 <h2>Elites</h2>
-<p>From floor 3, any regular baddie can show up as an <strong>elite</strong>, with a gold ring and a + after its name. Elites have 175% health (rounded), and give double XP and double points. They're also harder to pin down: only every other plunger hit stuns them (the 1st, 3rd, 5th...), and only for the turn you hit them. Each baddie's card below spells out its elite modifiers.</p>
+<p>From floor 3, any regular baddie can show up as an <strong>elite</strong>, with a gold ring and a + after its name. Elites have 175% health (rounded), give double XP and double points, and each kind brings its own named special. Toilet Roach+ is bulk only — no named twist beyond the shared elite bump.</p>
 <p>At most 1 elite per floor through floor 15, 2 through floor 25, then uncapped. The boss floor never spawns elites.</p>
 <div class="table-wrap"><table>
 <tr><th>Floor</th><th>Elite chance per baddie</th><th>Max elites</th></tr>
@@ -53,15 +53,27 @@
 <tr><td>26</td><td>50%</td><td>∞</td></tr>
 </table></div>
 <p class="muted">The chance keeps rising by 3% a floor and tops out at 50%.</p>
+<div class="table-wrap"><table>
+<tr><th></th><th>Elite</th><th>Ability</th><th>What it does</th></tr>
+<tr><td><img class="sprite" src="img/enemy_hairball.png" width="32" height="32" alt="Hairball"></td><td>Hairball+</td><td>Extra Clump</td><td>Even chunkier than a normal elite — more health on top of the usual elite bump.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_floater.png" width="32" height="32" alt="Floater"></td><td>Floater+</td><td>Quick Return</td><td>First puddle dormancy is only 2 turns; later flushes escalate as usual.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_stinkEye.png" width="32" height="32" alt="Stink Eye"></td><td>Stink Eye+</td><td>Wandering Gaze</td><td>Always starts looking at least two ways.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_sbd.png" width="32" height="32" alt="S.B.D."></td><td>S.B.D.+</td><td>In the Walls</td><td>While standing in a wall, plunger hits do nothing. Items and spills still work.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_hotSauceImp.png" width="32" height="32" alt="Hot Sauce Imp"></td><td>Hot Sauce Imp+</td><td>Death Sauce</td><td>On flush, leaves a 2-turn fuse. When it pops, the death tile and all 8 around it take 1 — you and baddies alike.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_laidBrick.png" width="32" height="32" alt="Laid Brick"></td><td>Laid Brick+</td><td>Hard Landing</td><td>A bite that connects also knocks you back one tile.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_burrito.png" width="32" height="32" alt="Mystery Burrito"></td><td>Mystery Burrito+</td><td>Raging Burrito</td><td>No longer slow — it walks every turn. Kill it from range; plunger trades still hurt.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_sweetCorn.png" width="32" height="32" alt="Sweet Corn"></td><td>Sweet Corn+</td><td>Stubborn Husk</td><td>Only every other plunger hit stuns it, and only for the current turn. Still takes at most 1 damage per hit.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_uhOh.png" width="32" height="32" alt="Uh-Oh"></td><td>Uh-Oh+</td><td>Double Toot</td><td>Pop splash deals 2 instead of 1.</td></tr>
+</table></div>
 <h2>The full list</h2>
 <section class="entry" id="hairball">
   <div class="entry-art"><img class="sprite" src="img/enemy_hairball.png" width="64" height="64" alt="Hairball"></div>
   <div class="entry-text">
     <h3>Hairball</h3>
     <p class="flavor">Pulled from the shower drain and it is NOT happy about it.</p>
-<dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Points</dt><dd>10 <span class="muted">(elite 20)</span></dd></div><div><dt>First seen</dt><dd>Floor 1</dd></div></dl>
+<dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 3)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Points</dt><dd>10 <span class="muted">(elite 20)</span></dd></div><div><dt>First seen</dt><dd>Floor 1</dd></div></dl>
 <p>Walks toward you and bites when next to you.</p>
-<p class="tip"><strong>Elite Hairball+:</strong> From floor 3, some show up with a gold ring and a +. Health 2, 2 XP, and 20 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite Hairball+ — Extra Clump:</strong> From floor 3, some show up with a gold ring and a +. Health 3, 2 XP, and 20 points. <strong>Extra Clump:</strong> Even chunkier than a normal elite — more health on top of the usual elite bump.</p>
 <p class="tip"><strong>Tip:</strong> The training dummy. Let it walk up to you and plunge it first. It's worth the least XP, so don't take a hit to reach one.</p>
   </div>
 </section>
@@ -72,7 +84,7 @@
     <p class="flavor">You flushed it. It came back. They always come back.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>2 <span class="muted">(elite 4)</span></dd></div><div><dt>Points</dt><dd>15 <span class="muted">(elite 30)</span></dd></div><div><dt>First seen</dt><dd>Floor 3</dd></div></dl>
 <p>Comes back 4 turns after the first flush, then one turn longer each time you flush it again. Standing on its puddle pauses the countdown until you step off. Other baddies won't step on a puddle.</p>
-<p class="tip"><strong>Elite Floater+:</strong> From floor 3, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite Floater+ — Quick Return:</strong> From floor 3, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. <strong>Quick Return:</strong> First puddle dormancy is only 2 turns; later flushes escalate as usual.</p>
 <p class="tip"><strong>Tip:</strong> Only the first flush is worth XP and points; when it comes back, it's worth nothing. Each flush dorms it one turn longer than the last, so a pile-up eventually opens a gap. Stand on the puddle to pause it, or Royal Flush to clear puddles for good.</p>
   </div>
 </section>
@@ -83,7 +95,7 @@
     <p class="flavor">A floating eyeball wreathed in stink lines. It never blinks.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>Never</dd></div><div><dt>XP</dt><dd>2 <span class="muted">(elite 4)</span></dd></div><div><dt>Points</dt><dd>15 <span class="muted">(elite 30)</span></dd></div><div><dt>First seen</dt><dd>Floor 4</dd></div></dl>
 <p>Never moves. Fires a stench beam down the lane it faces whenever you're in it. The beam hurts baddies too.</p>
-<p class="tip"><strong>Elite Stink Eye+:</strong> From floor 4, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite Stink Eye+ — Wandering Gaze:</strong> From floor 4, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. <strong>Wandering Gaze:</strong> Always starts looking at least two ways.</p>
 <p class="tip"><strong>Tip:</strong> It never moves, so it's never a threat if you stay out of its lane. Walls and Medicine Cabinets block the beam. Its beam hurts every other baddie in the lane, so lead chasers through it. From floor 10 some look in 2 directions, and from floor 14 some look in all 4.</p>
   </div>
 </section>
@@ -94,7 +106,7 @@
     <p class="flavor">Silent But Deadly. You'll never see it coming through the wall.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>2 <span class="muted">(elite 4)</span></dd></div><div><dt>Points</dt><dd>15 <span class="muted">(elite 30)</span></dd></div><div><dt>First seen</dt><dd>Floor 5</dd></div><div><dt>Walls</dt><dd>Drifts through</dd></div></dl>
 <p>Drifts straight through walls.</p>
-<p class="tip"><strong>Elite S.B.D.+:</strong> From floor 5, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite S.B.D.+ — In the Walls:</strong> From floor 5, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. <strong>In the Walls:</strong> While standing in a wall, plunger hits do nothing. Items and spills still work.</p>
 <p class="tip"><strong>Tip:</strong> Walls won't save you, and choke points don't work on it. Watch where it's drifting and meet it on your terms.</p>
   </div>
 </section>
@@ -105,7 +117,7 @@
     <p class="flavor">Lives under the tank. Moves twice as fast as you'd like.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>2 actions a turn</dd></div><div><dt>XP</dt><dd>3 <span class="muted">(elite 6)</span></dd></div><div><dt>Points</dt><dd>20 <span class="muted">(elite 40)</span></dd></div><div><dt>First seen</dt><dd>Floor 6</dd></div></dl>
 <p>Takes 2 actions per turn: it can step next to you and bite in the same turn, or bite twice.</p>
-<p class="tip"><strong>Elite Toilet Roach+:</strong> From floor 6, some show up with a gold ring and a +. Health 2, 6 XP, and 40 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite Toilet Roach+:</strong> From floor 6, some show up with a gold ring and a +. Health 2, 6 XP, and 40 points. No named twist beyond the tougher body and bigger payout.</p>
 <p class="tip"><strong>Tip:</strong> With 2 actions it can step next to you and bite in the same turn. If it's exactly 2 steps away, it gets a free bite, so either hit it with a throw or move so it ends up 3 steps away and has to spend both actions walking.</p>
   </div>
 </section>
@@ -116,7 +128,7 @@
     <p class="flavor">Born from last night's Taco Tuesday. Throws what it ate.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>3 <span class="muted">(elite 6)</span></dd></div><div><dt>Points</dt><dd>20 <span class="muted">(elite 40)</span></dd></div><div><dt>First seen</dt><dd>Floor 7</dd></div></dl>
 <p>Lines up a shot when you share its row or column, then fires a turn later. Move out of the lane! Its fireball leaves a hot spill wherever it lands, for the rest of the floor.</p>
-<p class="tip"><strong>Elite Hot Sauce Imp+:</strong> From floor 7, some show up with a gold ring and a +. Health 2, 6 XP, and 40 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite Hot Sauce Imp+ — Death Sauce:</strong> From floor 7, some show up with a gold ring and a +. Health 2, 6 XP, and 40 points. <strong>Death Sauce:</strong> On flush, leaves a 2-turn fuse. When it pops, the death tile and all 8 around it take 1 — you and baddies alike.</p>
 <p class="tip"><strong>Tip:</strong> It telegraphs its shot with an orange lane, so just step out of the row or column. Plunging it cancels the shot. Its fireball hits the first thing in the lane, including other baddies, so hide behind them. Wherever the fireball lands it leaves a hot spill for the rest of the floor, and those can flush you. Watch where it's aiming: a missed shot can burn a hallway you need.</p>
   </div>
 </section>
@@ -127,8 +139,8 @@
     <p class="flavor">Somebody laid a brick and walked away. Now it's your problem, and it hits like one.</p>
 <dl class="stats"><div><dt>Health</dt><dd>3 <span class="muted">(elite 5)</span></dd></div><div><dt>Hits for</dt><dd>2</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>5 <span class="muted">(elite 10)</span></dd></div><div><dt>Points</dt><dd>40 <span class="muted">(elite 80)</span></dd></div><div><dt>First seen</dt><dd>Floor 8</dd></div></dl>
 <p>Takes 3 hits and hits for 2 hearts. Never let it get the first swing.</p>
-<p class="tip"><strong>Elite Laid Brick+:</strong> From floor 8, some show up with a gold ring and a +. Health 5, 10 XP, and 80 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
-<p class="tip"><strong>Tip:</strong> 3 health and 2-heart hits. A non-elite Brick is stunned by every plunger hit, so if you get the first swing it never hits back. Never step next to one.</p>
+<p class="tip"><strong>Elite Laid Brick+ — Hard Landing:</strong> From floor 8, some show up with a gold ring and a +. Health 5, 10 XP, and 80 points. <strong>Hard Landing:</strong> A bite that connects also knocks you back one tile.</p>
+<p class="tip"><strong>Tip:</strong> 3 health and 2-heart hits. It stuns like any regular baddie, so if you get the first swing it never hits back. Never step next to one — and watch Hard Landing on the elite.</p>
   </div>
 </section>
 <section class="entry" id="mystery-burrito">
@@ -138,7 +150,7 @@
     <p class="flavor">Found under a gas station heat lamp. Nobody knows how long it's been there, and it's furious about it.</p>
 <dl class="stats"><div><dt>Health</dt><dd>3 <span class="muted">(elite 5)</span></dd></div><div><dt>Hits for</dt><dd>3</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>5 <span class="muted">(elite 10)</span></dd></div><div><dt>Points</dt><dd>40 <span class="muted">(elite 80)</span></dd></div><div><dt>First seen</dt><dd>Floor 9</dd></div></dl>
 <p>Hits for 3 and is too hot to stun, but it only moves every other turn. Wear it down from range before it gets close. An Ice-Cold Seat still freezes it.</p>
-<p class="tip"><strong>Elite Mystery Burrito+:</strong> From floor 9, some show up with a gold ring and a +. Health 5, 10 XP, and 80 points. Plunger still can't stun it; a Wet Floor Sign or Ice-Cold Seat still works. Elite only adds the tougher body and bigger payout.</p>
+<p class="tip"><strong>Elite Mystery Burrito+ — Raging Burrito:</strong> From floor 9, some show up with a gold ring and a +. Health 5, 10 XP, and 80 points. <strong>Raging Burrito:</strong> No longer slow — it walks every turn. Kill it from range; plunger trades still hurt.</p>
 <p class="tip"><strong>Tip:</strong> The one baddie you really want to fight from range. It hits for 3, and plunging it doesn't stun it, so every swing is a trade. But it only moves every other turn: back off, throw TP Rolls, and let it waddle into them. An Ice-Cold Seat freezes it if it gets too close.</p>
   </div>
 </section>
@@ -149,7 +161,7 @@
     <p class="flavor">No matter what happens to it, it always comes through in one piece.</p>
 <dl class="stats"><div><dt>Health</dt><dd>4 <span class="muted">(elite 7)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>4 <span class="muted">(elite 8)</span></dd></div><div><dt>Points</dt><dd>30 <span class="muted">(elite 60)</span></dd></div><div><dt>First seen</dt><dd>Floor 10</dd></div></dl>
 <p>Indigestible: every hit does just 1 damage, no matter how hard, so save your Prune Juice. A Royal Flush still gets it.</p>
-<p class="tip"><strong>Elite Sweet Corn+:</strong> From floor 10, some show up with a gold ring and a +. Health 7, 8 XP, and 60 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite Sweet Corn+ — Stubborn Husk:</strong> From floor 10, some show up with a gold ring and a +. Health 7, 8 XP, and 60 points. <strong>Stubborn Husk:</strong> Only every other plunger hit stuns it, and only for the current turn. Still takes at most 1 damage per hit.</p>
 <p class="tip"><strong>Tip:</strong> Every hit does 1 damage, so a Prune Juice or a big Firm Grip hit is wasted on it. It can still be stunned, though, so get the first swing and keep plunging; it never gets to hit back. Deal with the dangerous baddies first.</p>
   </div>
 </section>
@@ -160,7 +172,7 @@
     <p class="flavor">It was supposed to be just a toot. It was not just a toot.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>3 <span class="muted">(elite 6)</span></dd></div><div><dt>Points</dt><dd>25 <span class="muted">(elite 50)</span></dd></div><div><dt>First seen</dt><dd>Floor 11</dd></div></dl>
 <p>Pops when it's flushed and splatters all 8 tiles around it for 1, baddies included. Flush it from range, or pop it in a crowd.</p>
-<p class="tip"><strong>Elite Uh-Oh+:</strong> From floor 11, some show up with a gold ring and a +. Health 2, 6 XP, and 50 points. Only every other plunger hit stuns it (1st, 3rd, 5th…), and the stun only lasts the current turn.</p>
+<p class="tip"><strong>Elite Uh-Oh+ — Double Toot:</strong> From floor 11, some show up with a gold ring and a +. Health 2, 6 XP, and 50 points. <strong>Double Toot:</strong> Pop splash deals 2 instead of 1.</p>
 <p class="tip"><strong>Tip:</strong> Flushing it next to you costs a heart, so pop it with a TP Roll from range. Better yet, wait until other baddies crowd around it: the splatter does 1 to each of them, enough to flush a Hairball, Floater, or another Uh-Oh (which pops too).</p>
   </div>
 </section>
