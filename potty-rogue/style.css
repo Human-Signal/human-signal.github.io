@@ -149,7 +149,20 @@ img.ach-icon {
 .rarity.uncommon { background: var(--green); }
 .rarity.rare { background: #2f6ea8; }
 .rarity.legendary { background: #b8860b; }
-.rarity.one-time { background: #6b3fa0; }
+
+/* Guild / store unlocks — ink on lavender, not white-on-color (fails when CSS lags). */
+.onetime {
+  display: inline-block;
+  padding: 0 7px;
+  border-radius: 4px;
+  border: 2px solid #5a2f8e;
+  background: #e8dff5;
+  color: #3b1f6e;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
 
 .table-wrap { overflow-x: auto; margin: 12px 0; }
 table { border-collapse: collapse; width: 100%; background: #fff; font-size: 15px; }
