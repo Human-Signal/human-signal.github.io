@@ -149,6 +149,7 @@ img.ach-icon {
 .rarity.uncommon { background: var(--green); }
 .rarity.rare { background: #2f6ea8; }
 .rarity.legendary { background: #b8860b; }
+.rarity.permanent { background: #6b3fa0; }
 
 .table-wrap { overflow-x: auto; margin: 12px 0; }
 table { border-collapse: collapse; width: 100%; background: #fff; font-size: 15px; }
