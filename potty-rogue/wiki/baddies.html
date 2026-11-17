@@ -59,7 +59,7 @@
 <tr><td><img class="sprite" src="img/enemy_hairball.png" width="32" height="32" alt="Hairball"></td><td>Hairball+</td><td>Extra Clump</td><td>Even chunkier than a normal elite — more health on top of the usual elite bump.</td></tr>
 <tr><td><img class="sprite" src="img/enemy_floater.png" width="32" height="32" alt="Floater"></td><td>Floater+</td><td>Quick Return</td><td>First puddle dormancy is only 2 turns; later flushes escalate as usual.</td></tr>
 <tr><td><img class="sprite" src="img/enemy_stinkEye.png" width="32" height="32" alt="Stink Eye"></td><td>Stink Eye+</td><td>Wandering Gaze</td><td>Always starts looking at least two ways.</td></tr>
-<tr><td><img class="sprite" src="img/enemy_sbd.png" width="32" height="32" alt="S.B.D."></td><td>S.B.D.+</td><td>In the Walls</td><td>While standing in a wall, plunger hits do nothing. Items and spills still work.</td></tr>
+<tr><td><img class="sprite" src="img/enemy_sbd.png" width="32" height="32" alt="S.B.D."></td><td>S.B.D.+</td><td>Cut Corners</td><td>Paths on diagonals as well as straight lines. Still only bites a tile directly next to it.</td></tr>
 <tr><td><img class="sprite" src="img/enemy_hotSauceImp.png" width="32" height="32" alt="Hot Sauce Imp"></td><td>Hot Sauce Imp+</td><td>Death Sauce</td><td>On flush, leaves a 2-turn fuse. When it pops, the death tile and all 8 around it take 1 — you and baddies alike.</td></tr>
 <tr><td><img class="sprite" src="img/enemy_laidBrick.png" width="32" height="32" alt="Laid Brick"></td><td>Laid Brick+</td><td>Hard Landing</td><td>A bite that connects also knocks you back one tile.</td></tr>
 <tr><td><img class="sprite" src="img/enemy_burrito.png" width="32" height="32" alt="Mystery Burrito"></td><td>Mystery Burrito+</td><td>Raging Burrito</td><td>No longer slow — it walks every turn. Kill it from range; plunger trades still hurt.</td></tr>
@@ -84,9 +84,9 @@
     <h3>Floater</h3>
     <p class="flavor">You flushed it. It came back. They always come back.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>2 <span class="muted">(elite 4)</span></dd></div><div><dt>Points</dt><dd>15 <span class="muted">(elite 30)</span></dd></div><div><dt>First seen</dt><dd>Floor 3</dd></div></dl>
-<p>Comes back 4 turns after the first flush, then one turn longer each time you flush it again. Standing on its puddle pauses the countdown until you step off. Other baddies won't step on a puddle.</p>
+<p>Comes back 4 turns after the first flush, then one turn longer each time you flush it again. Standing on its puddle pauses the countdown until you step off. Dropping an item on the puddle also blocks the revive. Other baddies will walk right over a puddle; it won't revive until they leave.</p>
 <p class="tip"><strong>Elite Floater+ — Quick Return:</strong> From floor 3, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. <strong>Quick Return:</strong> First puddle dormancy is only 2 turns; later flushes escalate as usual.</p>
-<p class="tip"><strong>Tip:</strong> Only the first flush is worth XP and points; when it comes back, it's worth nothing. Each flush dorms it one turn longer than the last, so a pile-up eventually opens a gap. Stand on the puddle to pause it, or Royal Flush to clear puddles for good.</p>
+<p class="tip"><strong>Tip:</strong> Only the first flush is worth XP and points; when it comes back, it's worth nothing. Each flush dorms it one turn longer than the last, so a pile-up eventually opens a gap. Stand on the puddle to pause it, drop an item on it to block the revive entirely, or Royal Flush to clear puddles for good.</p>
   </div>
 </section>
 <section class="entry" id="stink-eye">
@@ -97,7 +97,7 @@
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>Never</dd></div><div><dt>XP</dt><dd>2 <span class="muted">(elite 4)</span></dd></div><div><dt>Points</dt><dd>15 <span class="muted">(elite 30)</span></dd></div><div><dt>First seen</dt><dd>Floor 4</dd></div></dl>
 <p>Never moves. Fires a stench beam down the lane it faces whenever you're in it. The beam hurts baddies too.</p>
 <p class="tip"><strong>Elite Stink Eye+ — Wandering Gaze:</strong> From floor 4, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. <strong>Wandering Gaze:</strong> Always starts looking at least two ways.</p>
-<p class="tip"><strong>Tip:</strong> It never moves, so it's never a threat if you stay out of its lane. Walls and Medicine Cabinets block the beam. Its beam hurts every other baddie in the lane, so lead chasers through it. From floor 10 some look in 2 directions, and from floor 14 some look in all 4.</p>
+<p class="tip"><strong>Tip:</strong> It never moves, so it's never a threat if you stay out of its lane. Every facing covers at least one open cell — it never stares straight into a wall or cabinet. Walls and Medicine Cabinets block the beam. Its beam hurts every other baddie in the lane, so lead chasers through it. From floor 10 some look in 2 directions, and from floor 14 some look in all 4.</p>
   </div>
 </section>
 <section class="entry" id="sbd">
@@ -107,8 +107,8 @@
     <p class="flavor">Silent But Deadly. You'll never see it coming through the wall.</p>
 <dl class="stats"><div><dt>Health</dt><dd>1 <span class="muted">(elite 2)</span></dd></div><div><dt>Hits for</dt><dd>1</dd></div><div><dt>Moves</dt><dd>1 action a turn</dd></div><div><dt>XP</dt><dd>2 <span class="muted">(elite 4)</span></dd></div><div><dt>Points</dt><dd>15 <span class="muted">(elite 30)</span></dd></div><div><dt>First seen</dt><dd>Floor 5</dd></div><div><dt>Walls</dt><dd>Drifts through</dd></div></dl>
 <p>Drifts straight through walls.</p>
-<p class="tip"><strong>Elite S.B.D.+ — In the Walls:</strong> From floor 5, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. <strong>In the Walls:</strong> While standing in a wall, plunger hits do nothing. Items and spills still work.</p>
-<p class="tip"><strong>Tip:</strong> Walls won't save you, and choke points don't work on it. Watch where it's drifting and meet it on your terms.</p>
+<p class="tip"><strong>Elite S.B.D.+ — Cut Corners:</strong> From floor 5, some show up with a gold ring and a +. Health 2, 4 XP, and 30 points. <strong>Cut Corners:</strong> Paths on diagonals as well as straight lines. Still only bites a tile directly next to it.</p>
+<p class="tip"><strong>Tip:</strong> Walls won't save you, and choke points don't work on it. Watch where it's drifting and meet it on your terms. S.B.D.+ cuts corners on diagonals, so open space closes faster — bites stay orthogonal.</p>
   </div>
 </section>
 <section class="entry" id="toilet-roach">
