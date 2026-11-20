@@ -42,6 +42,23 @@ img.icon {
   border: 3px solid var(--ink);
 }
 
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0 8px;
+}
+.store-badge {
+  display: inline-block;
+  line-height: 0;
+}
+.store-badge img {
+  display: block;
+  height: 64px;
+  width: auto;
+}
+
 nav { margin-top: 32px; font-size: 15px; }
 nav a { margin-right: 16px; }
 
